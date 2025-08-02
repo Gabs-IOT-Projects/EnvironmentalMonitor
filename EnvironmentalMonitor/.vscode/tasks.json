@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: avr-gcc.exe arquivo de build ativo",
+			"command": "C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mmcu=atmega328p",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: avr-gcc.exe arquivo de build ativo",
+			"command": "C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mmcu=atmega328p",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: C:/Users/gabri/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe"
+		}
+	]
+}
