@@ -1,2 +1,0 @@
-# EnvironmentalMonitor
-IOT environmental monitor
