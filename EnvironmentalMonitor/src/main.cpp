@@ -1,18 +1,29 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+const int lightPinDetector = 2;
+const int lightPin = 3;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);
+  
+  pinMode(lightPinDetector, INPUT);
+  pinMode(lightPin, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  bool hasNoLight = digitalRead(lightPinDetector);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  Serial.print("light detected: ");
+  Serial.print(!hasNoLight);
+  Serial.println("");
+
+  if (hasNoLight)
+  {
+    digitalWrite(lightPin, HIGH);
+  } else
+  {
+    digitalWrite(lightPin, LOW);
+  }
+
+  delay(100);
 }
